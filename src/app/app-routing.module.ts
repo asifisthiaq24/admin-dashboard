@@ -9,8 +9,10 @@ import { LoginComponent } from './login/login.component';
 
 //const routes: Routes = [];
 
-const routes: Routes = [{
-  path: '',
+const routes: Routes = [
+  { path: '', pathMatch: 'full', redirectTo: 'admin-dashboard' },
+  {
+  path: 'admin-dashboard',
   component: CommonLayoutComponent,
   children: [{
     path: '',
@@ -22,7 +24,7 @@ const routes: Routes = [{
 }
 
   , {
-  path: '',
+  path: 'admin-dashboard',
   component: FullwidthComponent,
   children: [
     {
