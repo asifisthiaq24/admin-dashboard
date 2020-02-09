@@ -13,7 +13,7 @@ import { FullwidthComponent } from './layouts/fullwidth/fullwidth.component';
 import { LoginComponent } from './login/login.component';
 // import { CommonLayoutModule } from './layouts/common-layout/common-layout.module';
 // import { FullwidthModule } from './layouts/fullwidth/fullwidth.module';
-
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -29,7 +29,8 @@ import { LoginComponent } from './login/login.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FlexLayoutModule
 
   ],
   providers: [],
