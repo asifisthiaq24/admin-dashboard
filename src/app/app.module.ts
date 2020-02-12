@@ -14,6 +14,10 @@ import { LoginComponent } from './login/login.component';
 // import { CommonLayoutModule } from './layouts/common-layout/common-layout.module';
 // import { FullwidthModule } from './layouts/fullwidth/fullwidth.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
 
 @NgModule({
   declarations: [
@@ -30,11 +34,15 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    BrowserAnimationsModule,
+    MDBBootstrapModule,
+    MDBBootstrapModule.forRoot()
 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: []
 })
 export class AppModule { }
 

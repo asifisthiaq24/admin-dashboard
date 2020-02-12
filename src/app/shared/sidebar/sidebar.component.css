@@ -1,5 +1,30 @@
-:host {
+/* :host {
     padding: 20px;
     background-color: #99a5ad;
   }
+   */
+
+   .sidenav {
+    width: 170px;
+    position: fixed;
+    z-index: 1;
+    top: 100px;
+    left: 0px;
+    background: #eee;
+    overflow-x: hidden;
+    padding: 8px 0;
+  }
   
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #444;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    /* color: #064579; */
+    color:#1976d2;
+    background-color: #cfd0d1;
+  }
